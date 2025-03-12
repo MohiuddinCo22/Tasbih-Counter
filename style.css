@@ -1,0 +1,106 @@
+/* সাধারণ ডিজাইন */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ডার্ক মুড */
+body.dark {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ডার্ক মুড কন্টেইনার */
+body.dark .container {
+    background: #333;
+}
+
+/* হেডার */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* থিম টগল বাটন */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ছবি */
+.images img {
+    width: 230px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* জিকির ইনপুট */
+.zikr-section {
+    margin: 15px 0;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+body.dark input {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+/* কাউন্টার ডিজাইন */
+.counter p {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#increment {
+    background-color: #28a745;
+    color: white;
+}
+
+#reset {
+    background-color: #dc3545;
+    color: white;
+}
