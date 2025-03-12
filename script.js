@@ -10,7 +10,7 @@ document.getElementById("increment").addEventListener("click", function () {
 document.getElementById("reset").addEventListener("click", function () {
     count = 0;
     document.getElementById("count").innerText = count;
-    document.getElementById("zikr").value = "";
+    document.getElementById("zikirlist").value = "";
 });
 
 // ডার্ক / লাইট মোড টগল
